@@ -7,5 +7,8 @@ def map(array)
 end
 
 def reduce(array)
-  
+  array.length.times { |index|
+    array[index] = yield(array[index])
+  }
+  array  
 end
