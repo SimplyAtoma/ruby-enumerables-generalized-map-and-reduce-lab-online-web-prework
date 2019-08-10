@@ -7,8 +7,9 @@ def map(array)
 end
 
 def reduce(array)
+  solution = nil
   array.length.times { |index|
-    array[index] = yield(array[index])
+    solution  = yield(array[index])
   }
-  array  
+  solution  
 end
