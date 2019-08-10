@@ -1,7 +1,7 @@
 # Your Code Here
 def map(array)
   array.length.times { |index|
-    array[index] = yield
+    yield(array[index])
   }
 end
 
