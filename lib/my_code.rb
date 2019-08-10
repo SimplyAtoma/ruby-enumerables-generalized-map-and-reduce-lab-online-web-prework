@@ -12,6 +12,7 @@ def reduce(array, starting = 0)
     starting  = yield(array[index], starting)
   else
     starting = false
+  end
   }
   starting  
 end
