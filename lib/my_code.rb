@@ -6,10 +6,9 @@ def map(array)
   array
 end
 
-def reduce(array)
-  solution = nil
+def reduce(array, starting = 0)
   array.length.times { |index|
-    solution  = yield(array[index])
+    starting  = yield(array[index], starting)
   }
-  solution  
+  starting  
 end
