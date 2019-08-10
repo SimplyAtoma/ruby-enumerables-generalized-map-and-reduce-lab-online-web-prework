@@ -8,7 +8,10 @@ end
 
 def reduce(array, starting = 0)
   array.length.times { |index|
+  if array[index]
     starting  = yield(array[index], starting)
+  else
+    starting = false
   }
   starting  
 end
